@@ -14,12 +14,12 @@ const Completed = ({ todoData, check, setTodoData }) => {
   }
 
   return (
-    <div className='bg-dark m-5 text-light rounded p-1'>
+    <div className='bg-dark m-5 text-light'>
+            <p className='fs-5 float-start m-2'>Completed</p>
       {
         completedData.length !== 0 &&
         <>
           <div className='d-inline'>
-            <p className='fs-5 float-start m-2'>Completed</p>
             <Button variant="contained" color="success" className="ms-5 float-end m-2" onClick={handleAllDelete}>Clear All Completed Task</Button>
           </div>
           <Show todoData={todoData} check={check} list={completedData} setTodoData={setTodoData} />
