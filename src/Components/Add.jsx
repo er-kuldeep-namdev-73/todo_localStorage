@@ -50,7 +50,7 @@ const Add = ({ todoData, setTodoData }) => {
                 <div className='p-3'>
                     <label className='text-start mb-2 fs-5 text-primary'>Add Item</label><br />
                     {/* <input id="addItem" name="title" placeholder="Please Enter the Item" className='w-100 form-control' onChange={(e) => handleChange(e)} /> */}
-                    <TextField id="addItem" label="Add Item" variant="outlined" className='w-100 form-control' name="title" onChange={(e) => handleChange(e)}/><br/>
+                    <TextField id="addItem" label="Add Item" variant="standard" className='w-100 form-control' name="title" onChange={(e) => handleChange(e)}/><br/>
                     <label className='mt-2 fs-5 text-primary'>Priority</label>
                     {
                         !render &&

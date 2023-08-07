@@ -15,11 +15,14 @@ const Show = ({ todoData, list, setTodoData }) => {
     }
 
     function handleDelete(e, id) {
-        let removeData = [...todoData];
-        removeData = removeData.filter((todo) => {
-            return todo.id !== id
-        })
-        setTodoData(removeData)
+        let del = window.confirm("Do You Want to Delete this Item!")
+        if (del) {
+            let removeData = [...todoData];
+            removeData = removeData.filter((todo) => {
+                return todo.id !== id
+            })
+            setTodoData(removeData)
+        }
     }
 
     return (
