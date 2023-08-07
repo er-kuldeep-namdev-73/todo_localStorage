@@ -14,7 +14,7 @@ const Completed = ({ todoData, check, setTodoData }) => {
   }
 
   return (
-    <div className='bg-dark m-5 text-light'>
+    <div className='bg-dark m-5 text-light rounded p-1'>
       <p className='fs-5 float-start m-2'>Completed</p>
       {
         completedData.length !== 0 &&
