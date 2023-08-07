@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Button } from '@mui/material';
+import { toast } from 'react-toastify';
 
 const Add = ({ todoData, setTodoData }) => {
 
@@ -18,10 +19,10 @@ const Add = ({ todoData, setTodoData }) => {
         e.preventDefault();
         e.target.reset();
         if (value1.title === "" && value1.priority === "") {
-            alert("Please Enter the Value")
+            toast.error("Please Enter The Value")
         }
         else if (value1.title === "" || value1.priority === "") {
-            alert("Please Enter the Value")
+            toast.error("Please Enter The Value")
         }
         else {
             let index = todoData.slice(-1)[0]?.id

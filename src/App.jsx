@@ -3,6 +3,8 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import Add from './Components/Add'
 import Completed from './Components/Completed'
 import Pending from './Components/Pending'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const App = () => {
@@ -34,6 +36,7 @@ const App = () => {
           <Completed todoData={todoData} setTodoData={setTodoData} check={check} />
         </div>
       </div>
+      <ToastContainer />
     </div>
   )
 }
